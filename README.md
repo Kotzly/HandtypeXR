@@ -133,7 +133,8 @@ Steam Link isn't available for SteamVR on Linux, so on a Linux PC the Quest
 connects through [ALVR](https://github.com/alvr-org/ALVR) instead. Getting
 ALVR to show a picture took several fixes. This is the setup that ended up
 working, on Ubuntu 22.04 with SteamVR 2.17.10 and a Quest 3, as of October 2026.
-Reading the hand skeleton through ALVR with spike.py hasn't been tested yet.
+With this setup spike.py reads both hand skeletons (both hands show `ON`).
+Whether the bars keep moving while a game has focus hasn't been tested yet.
 
 ### 1. Pick the GPU (laptops with Intel + NVIDIA)
 
