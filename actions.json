@@ -7,8 +7,9 @@
     { "name": "/actions/spike/in/skeleton_right", "type": "skeleton", "skeleton": "/skeleton/hand/right" }
   ],
   "default_bindings": [
-    { "controller_type": "knuckles",     "binding_url": "bindings_skeleton.json" },
-    { "controller_type": "oculus_touch", "binding_url": "bindings_skeleton.json" }
+    { "controller_type": "knuckles", "binding_url": "bindings_knuckles.json" },
+    { "controller_type": "oculus_touch", "binding_url": "bindings_oculus_touch.json" },
+    { "controller_type": "svl_hand_interaction_augmented", "binding_url": "bindings_svl_hand_interaction_augmented.json" }
   ],
   "localization": [
     {

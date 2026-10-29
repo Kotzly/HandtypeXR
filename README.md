@@ -106,13 +106,15 @@ SteamVR desktop view, or take the headset off to look.
 SteamVR may not have connected the skeleton to this script. Fix it once:
 
 1. In SteamVR: *Settings > Controllers > Manage Controller Bindings*.
-2. Pick this script in the app list (it appears while spike.py is running).
+2. Pick this script in the app list. It appears only while spike.py is running,
+   under Python's name (e.g. `python3.9`), not as "HandtypeXR".
 3. Choose a binding that maps both hand skeletons ("HandtypeXR spike - skeleton only"),
    or create one that binds the left and right skeleton.
 
 The included binding covers the `knuckles` (Index) and `oculus_touch`
-controller types. The type Steam Link reports for tracked hands may be different,
-which is why this step can be needed.
+controller types, and `svl_hand_interaction_augmented`, the type Steam Link
+reports for tracked hands. SteamVR can ignore a default binding that has been
+changed or cached, which is why this step can still be needed.
 
 ## What to record
 
@@ -131,4 +133,4 @@ which is why this step can be needed.
 |---|---|
 | `spike.py` | The test. Prints live finger curl per hand, optionally logs to CSV. |
 | `actions.json` | Tells SteamVR this script wants the left and right hand skeletons. |
-| `bindings_skeleton.json` | Default binding: skeletons only, no buttons, so it doesn't interfere with the game. |
+| `bindings_<controller>.json` | Default binding per controller type: skeletons only, no buttons, so it doesn't interfere with the game. |

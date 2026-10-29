@@ -1,0 +1,21 @@
+{
+  "action_manifest_version": 1,
+  "bindings": {
+    "/actions/spike": {
+      "skeleton": [
+        {
+          "output": "/actions/spike/in/skeleton_left",
+          "path": "/user/hand/left/input/skeleton/left"
+        },
+        {
+          "output": "/actions/spike/in/skeleton_right",
+          "path": "/user/hand/right/input/skeleton/right"
+        }
+      ],
+      "sources": []
+    }
+  },
+  "controller_type": "svl_hand_interaction_augmented",
+  "name": "HandtypeXR spike - skeleton only",
+  "description": "Binds both hand skeletons. No buttons are bound, so it does not interfere with the game."
+}
