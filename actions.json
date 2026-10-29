@@ -1,0 +1,21 @@
+{
+  "action_sets": [
+    { "name": "/actions/spike", "usage": "leftright" }
+  ],
+  "actions": [
+    { "name": "/actions/spike/in/skeleton_left",  "type": "skeleton", "skeleton": "/skeleton/hand/left" },
+    { "name": "/actions/spike/in/skeleton_right", "type": "skeleton", "skeleton": "/skeleton/hand/right" }
+  ],
+  "default_bindings": [
+    { "controller_type": "knuckles",     "binding_url": "bindings_skeleton.json" },
+    { "controller_type": "oculus_touch", "binding_url": "bindings_skeleton.json" }
+  ],
+  "localization": [
+    {
+      "language_tag": "en_us",
+      "/actions/spike": "HandtypeXR spike",
+      "/actions/spike/in/skeleton_left": "Left hand skeleton",
+      "/actions/spike/in/skeleton_right": "Right hand skeleton"
+    }
+  ]
+}
